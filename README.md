@@ -4,7 +4,7 @@
 
 Implement generic k-fold cross-validation and bootstrapping model selection methods.
 
-In your README, answer the following questions:
+How to use: This code uses packages such as pandas, numpy, and matplotlib. You need to install each packages. Open CMD -> pip install numpy -> pip install pandas -> pip install matplotlib. After installing the package you can run each code blocks from top to bottom.
 
 ** Do your cross-validation and bootstrapping model selectors agree with a simpler model selector like AIC in simple cases (like linear regression)?**
   - Yes. $R^2$ of Ridge Regression is 0.92 and mean $R^2$ of our cross-validation is 0.79 and bootstrapping model is 0.81.
@@ -24,7 +24,19 @@ In your README, answer the following questions:
 	  -	Non-linear interactions or complex dependencies might not be fully captured by either method.
 
 ** What could you implement given more time to mitigate these cases or help users of your methods?**
-  -
+
+  1. Improve Data Quality:
+     - Use better imputation methods and add more relevant data, like market trends or historical prices, to provide richer context.
+  2. Try Better Models:
+     - Experiment with advanced models like gradient boosting, neural networks, or model ensembles to capture complex relationships.
+  3. Improve Evaluation:
+     - Use smarter validation methods, like stratified k-fold, and analyze residuals to catch biases or patterns we missed.
+  4. Simplify Use:
+     - Build an interactive dashboard for predictions and allow users to test "what-if" scenarios for better decision-making.
+  5. Fix Limitations:
+     - Address multicollinearity with Elastic Net regularization and confirm model stability with thorough bootstrapping.
+  6. Automate & Scale:
+      - Automate preprocessing and deploy the model as an API for real-time predictions.
 
 ** What parameters have you exposed to your users in order to use your model selectors.**
   1. Cross-Validation:
