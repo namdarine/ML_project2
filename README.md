@@ -27,7 +27,7 @@ pip install matplotlib
 
 4. Execute the cells step by step to preprocess data, train models, and evaluate performance.
 
-5. The last code block allows you to get a prediction of the price of an certain airplane you are looking for.(input numerical values for each "engine rate of climb, takeoff over 50ft, range")
+5. The last code block allows you to input numerical values for 'engine rate of climb', 'takeoff over 50ft', and 'range' to get a predicted airplane price.
 
 
 ## Answers to README Questions :
