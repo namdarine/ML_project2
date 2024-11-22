@@ -53,8 +53,7 @@ The following observations were noted :
 
 The methods may fail or provide undesirable results in the following scenarios:
 
-• Non-linear Relationships: Ridge Regression assumes linear relationships between predictors and the target. It may not perform well if the underlying 
-  relationship is non-linear.
+• Non-linear Relationships: Ridge Regression assumes linear relationships between predictors and the target. It might not function effectively if the underlying.
   
 • Outliers in the Dataset: Although Ridge reduces the impact of multicollinearity, it does not address outliers, which may skew predictions.
 
@@ -162,7 +161,7 @@ The implementation exposes the following parameters for users to fine-tune the m
 
     • An interactive module that predicts airplane prices based on user input.
    
-    • Demonstrates the model’s real-world application.
+    • Shows how the model is used in the real world.
 
 3. How It Works:
 
