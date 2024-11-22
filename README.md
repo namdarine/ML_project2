@@ -1,5 +1,7 @@
 # Project 2 : Model Selection 
 
+# Team: Data Mavericks
+
 ## Implement generic k-fold cross-validation and bootstrapping model selection methods.
 
 ### Overview:
