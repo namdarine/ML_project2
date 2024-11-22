@@ -22,7 +22,7 @@ pip install pandas
 pip install statsmodels
 pip install seaborn
 pip install matplotlib
-'''
+```
 
 4. Execute the cells step by step to preprocess data, train models, and evaluate performance.
 5. The last code block allows you to get a prediction of the price of an certain airplane you are looking for.(input numerical values for each "engine rate of climb, takeoff over 50ft, range")
@@ -209,7 +209,7 @@ Enter range (nautical miles): 2000
 
 # Output :
 Predicted Price: $2,750,000.00
-'''
+```
 
 
 ### Visualization of Results :
