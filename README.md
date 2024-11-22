@@ -116,37 +116,37 @@ The implementation exposes the following parameters for users to fine-tune the m
    
      • Why:  Aids feature selection and avoids multicollinearity, improving model efficiency.
 
-2.VIF Analysis:
+2. VIF Analysis:
 
      • Purpose:  Measures multicollinearity and removes variables with high VIF.
      
      • Why:  Ensures stable and interpretable model coefficients.
 
-3.Ridge Regression:
+3. Ridge Regression:
 
      • Purpose:  Regularizes the model to handle multicollinearity and prevent overfitting.
      
      • Why:  Enhances generalizability by balancing bias and variance.
 
-4.Hyperparameter Tuning:
+4. Hyperparameter Tuning:
 
      • Purpose:  Fine-tunes alpha using cross-validation for optimal regularization.
      
      • Why:  Achieves the best trade-off between bias and variance.
 
-5.Bootstrapping:
+5. Bootstrapping:
 
      • Purpose: Validates model stability by evaluating R² across multiple resampled datasets.
      
      • Why: Ensures consistent performance under different conditions.
 
-6.Adjusted R²:
+6. Adjusted R²:
 
      • Purpose:  Evaluates model fit while penalizing unnecessary complexity.
      
      • Why:  Prevents overfitting by adding irrelevant predictors.
 
-7.Visualization:
+7. Visualization:
 
      • Purpose:  Displays predicted vs. actual prices and residual analysis to evaluate model accuracy.
      
