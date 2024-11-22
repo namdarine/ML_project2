@@ -12,6 +12,7 @@ Our implementation excludes high-level machine learning libraries like scikit-le
 ### How to Run the Code :- 
 
 1. Clone the repository or download the notebook and data files.
+
 2. Ensure the dataset is saved in the same directory as the notebook. Hardcode the dataset path in the notebook if required (e.g., df = pd.read_csv('plane Price.csv')).
 
 3. Install the required libraries:
@@ -25,6 +26,7 @@ pip install matplotlib
 ```
 
 4. Execute the cells step by step to preprocess data, train models, and evaluate performance.
+
 5. The last code block allows you to get a prediction of the price of an certain airplane you are looking for.(input numerical values for each "engine rate of climb, takeoff over 50ft, range")
 
 
@@ -110,27 +112,27 @@ The implementation exposes the following parameters for users to fine-tune the m
 
 1. Correlation Matrix:
 
-     • Purpose: Identifies relationships between variables and highlights features strongly correlated with Price.
+     • Purpose:  Identifies relationships between variables and highlights features strongly correlated with Price.
    
-     • Why: Aids feature selection and avoids multicollinearity, improving model efficiency.
+     • Why:  Aids feature selection and avoids multicollinearity, improving model efficiency.
 
 2.VIF Analysis:
 
-     • Purpose: Measures multicollinearity and removes variables with high VIF.
+     • Purpose:  Measures multicollinearity and removes variables with high VIF.
      
-     • Why: Ensures stable and interpretable model coefficients.
+     • Why:  Ensures stable and interpretable model coefficients.
 
 3.Ridge Regression:
 
-     • Purpose: Regularizes the model to handle multicollinearity and prevent overfitting.
+     • Purpose:  Regularizes the model to handle multicollinearity and prevent overfitting.
      
-     • Why: Enhances generalizability by balancing bias and variance.
+     • Why:  Enhances generalizability by balancing bias and variance.
 
 4.Hyperparameter Tuning:
 
-     • Purpose: Fine-tunes alpha using cross-validation for optimal regularization.
+     • Purpose:  Fine-tunes alpha using cross-validation for optimal regularization.
      
-     • Why: Achieves the best trade-off between bias and variance.
+     • Why:  Achieves the best trade-off between bias and variance.
 
 5.Bootstrapping:
 
@@ -140,15 +142,15 @@ The implementation exposes the following parameters for users to fine-tune the m
 
 6.Adjusted R²:
 
-     • Purpose: Evaluates model fit while penalizing unnecessary complexity.
+     • Purpose:  Evaluates model fit while penalizing unnecessary complexity.
      
-     • Why: Prevents overfitting by adding irrelevant predictors.
+     • Why:  Prevents overfitting by adding irrelevant predictors.
 
 7.Visualization:
 
-     • Purpose: Displays predicted vs. actual prices and residual analysis to evaluate model accuracy.
+     • Purpose:  Displays predicted vs. actual prices and residual analysis to evaluate model accuracy.
      
-     • Why: Demonstrates the goodness of fit and identifies potential deviations
+     • Why:  Demonstrates the goodness of fit and identifies potential deviations
 
 
 
