@@ -263,6 +263,3 @@ Data visualization, including correlation matrices, residual plots, and predicte
 
 
 
-See sections 7.10-7.11 of Elements of Statistical Learning and the lecture notes. Pay particular attention to Section 7.10.2.
-
-As usual, above-and-beyond efforts will be considered for bonus points.
