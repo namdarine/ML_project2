@@ -9,26 +9,6 @@ This project implements Ridge Regression for predicting airplane prices based on
 Our implementation excludes high-level machine learning libraries like scikit-learn, relying instead on custom-built functions to ensure transparency and deeper understanding of Ridge Regression.
 
 
-### How to Run the Code:
-
-1. Install Dependencies: Ensure the following Python libraries are installed:
-```
-pip install numpy pandas matplotlib seaborn
-```
-
-2. Load the Notebook:
-Open the Plane_Price.ipynb Jupyter Notebook and execute cells sequentially. Ensure paths to datasets are hardcoded as instructed.
-
-3. Predict Prices:
-   
-     To predict airplane prices:
-
-           - Use the final section titled Airplane Price Predictor.
-           - Provide user inputs such as "Engine rate of climb," "Takeoff distance," and "Range."
-           - View the predicted price based on precomputed model weights.
-
-
-
 ### How to Run the Code :- 
 
 1. Clone the repository or download the notebook and data files.
@@ -36,7 +16,7 @@ Open the Plane_Price.ipynb Jupyter Notebook and execute cells sequentially. Ensu
 
 3. Install the required libraries:
 
-'''
+```python
 pip install numpy
 pip install pandas
 pip install statsmodels
@@ -59,8 +39,10 @@ Yes, the cross-validation and bootstrapping results align closely with the AIC (
 The following observations were noted :
 
 • Both methods confirmed the same regularization strength (alpha) as optimal during Ridge Regression hyperparameter tuning.
+
 • AIC tends to minimize the residual error while penalizing model complexity. Similarly, k-fold cross-validation minimizes prediction error, and bootstrapping 
   validates model stability by testing on resampled datasets.
+  
 • Thus, in simple cases, the model selectors provide consistent results and help confirm that the regularization and model complexity are well-balanced.
 
 
@@ -72,8 +54,11 @@ The methods may fail or provide undesirable results in the following scenarios:
 
 • Non-linear Relationships: Ridge Regression assumes linear relationships between predictors and the target. It may not perform well if the underlying 
   relationship is non-linear.
+  
 • Outliers in the Dataset: Although Ridge reduces the impact of multicollinearity, it does not address outliers, which may skew predictions.
+
 • Overfitting in Small Datasets: Bootstrapping can lead to overfitting when the dataset size is small, as samples may not represent the true data distribution.
+
 • Multicollinearity in k-fold Splits: If the feature selection is not consistent across folds, k-fold cross-validation may produce unstable results.
 
 
@@ -85,8 +70,11 @@ The methods may fail or provide undesirable results in the following scenarios:
 With additional time, the following enhancements could be implemented:
 
 • Polynomial Feature Transformation: To account for non-linear relationships between features and the target variable.
+
 • Outlier Detection: Add preprocessing steps to detect and handle outliers, such as robust scaling or removing extreme values.
+
 • Stratified Cross-Validation: Ensure more representative splits in k-fold cross-validation, particularly for datasets with imbalanced distributions.
+
 • Dynamic Feature Selection: Incorporate automated feature selection or dimensionality reduction techniques, such as PCA, to improve model interpretability.
 
 
@@ -110,8 +98,11 @@ The implementation exposes the following parameters for users to fine-tune the m
 ### Libraries Used :
 
 • NumPy: For numerical computations, including matrix operations and random sampling for bootstrapping.
+
 • Pandas: For data manipulation and preprocessing.
+
 • Matplotlib and Seaborn: For data visualization, including plotting the correlation matrix, residual analysis, and performance evaluations.
+
 • Statsmodels: To compute Variance Inflation Factor (VIF) for multicollinearity analysis.
 
 
@@ -121,36 +112,43 @@ The implementation exposes the following parameters for users to fine-tune the m
 1. Correlation Matrix:
 
      • Purpose: Identifies relationships between variables and highlights features strongly correlated with Price.
+   
      • Why: Aids feature selection and avoids multicollinearity, improving model efficiency.
 
 2.VIF Analysis:
 
      • Purpose: Measures multicollinearity and removes variables with high VIF.
+     
      • Why: Ensures stable and interpretable model coefficients.
 
 3.Ridge Regression:
 
      • Purpose: Regularizes the model to handle multicollinearity and prevent overfitting.
+     
      • Why: Enhances generalizability by balancing bias and variance.
 
 4.Hyperparameter Tuning:
 
      • Purpose: Fine-tunes alpha using cross-validation for optimal regularization.
+     
      • Why: Achieves the best trade-off between bias and variance.
 
 5.Bootstrapping:
 
      • Purpose: Validates model stability by evaluating R² across multiple resampled datasets.
+     
      • Why: Ensures consistent performance under different conditions.
 
 6.Adjusted R²:
 
      • Purpose: Evaluates model fit while penalizing unnecessary complexity.
+     
      • Why: Prevents overfitting by adding irrelevant predictors.
 
 7.Visualization:
 
      • Purpose: Displays predicted vs. actual prices and residual analysis to evaluate model accuracy.
+     
      • Why: Demonstrates the goodness of fit and identifies potential deviations
 
 
@@ -162,18 +160,22 @@ The implementation exposes the following parameters for users to fine-tune the m
 1. Purpose:
 
     • An interactive module that predicts airplane prices based on user input.
+   
     • Demonstrates the model’s real-world application.
 
-2. How It Works:
+3. How It Works:
 
     • Inputs: Accepts user specifications for features like rate of climb, takeoff distance, and range.
+   
     • Scaling: Standardizes inputs using precomputed means and standard deviations.
+   
     • Prediction: Applies the trained Ridge Regression model to compute the price.
 
 
-3. Why Include It:
+5. Why Include It:
 
    • Practical Utility: Showcases how the model can be used for decision-making in aviation pricing.
+   
    • Stakeholder Engagement: Provides an interactive way to demonstrate the model’s relevance. 
 
 
@@ -185,11 +187,13 @@ The project involves multiple steps for data preprocessing, model training, and 
 #### Run the Ridge Regression Model:
 
 • Load the dataset and preprocess it (e.g., handle missing values, scale features, compute the correlation matrix).
+
 • Train the Ridge Regression model with different alpha values to identify the optimal regularization strength.
 
 #### Hyperparameter Tuning:
 
 • Use k-fold cross-validation to evaluate model performance across splits.
+
 • Perform bootstrapping to validate model stability under resampling conditions.
 
 #### Manual Prediction:
@@ -198,15 +202,14 @@ In the final block titled "Airplane Price Predictor," you can input airplane spe
 
 Example:
 
-'''
-# Example Inputs
+```python
+# Example Inputs :
 Enter engine rate of climb (ft/min): 1800
 Enter takeoff distance over 50ft (ft): 4800
 Enter range (nautical miles): 2000
 
-# Output
+# Output :
 Predicted Price: $2,750,000.00
-
 '''
 
 
@@ -217,21 +220,25 @@ The project uses data visualization extensively to interpret results and validat
 1. Correlation Matrix:
 
    • A heatmap visualizing the relationships between features.
+
    • Example: Features like "Takeoff Distance" and "Engine Rate of Climb" show strong correlations with the price, aiding in feature    selection.
 
 2. Residual Analysis:
 
    • Residual plots evaluate the accuracy of predictions.
+
    • Example: Residuals scatter symmetrically around zero, indicating a well-fitted model.
 
 3. Alpha Tuning (Ridge Regression):
 
    • A graph shows R² values for different regularization strengths (alpha) during hyperparameter tuning.
+
    • Example: The curve helps identify the alpha value that provides the best trade-off between bias and variance.
 
 4. Predicted vs. Actual Prices:
 
    • A scatter plot comparing model predictions with actual prices.
+
    • Example: Points align closely to the diagonal "Perfect Fit" line, demonstrating good model predictions.
 
 
