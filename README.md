@@ -22,7 +22,6 @@ pip install pandas
 pip install statsmodels
 pip install seaborn
 pip install matplotlib
-
 '''
 
 4. Execute the cells step by step to preprocess data, train models, and evaluate performance.
