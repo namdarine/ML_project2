@@ -4,7 +4,7 @@
 
 Implement generic k-fold cross-validation and bootstrapping model selection methods.
 
-How to use: This code uses packages such as pandas, numpy, and matplotlib. You need to install each packages. Open CMD -> pip install numpy -> pip install pandas -> pip install matplotlib. After installing the package you can run each code blocks from top to bottom.
+How to use: This code uses packages such as pandas, numpy, statemodels, seaborn, and matplotlib. You need to install each packages. Open CMD -> pip install numpy -> pip install pandas -> pip install statsmodels -> pip install seaborn -> pip install matplotlib. After installing the package you can run each code blocks from top to bottom.
 
 ** Do your cross-validation and bootstrapping model selectors agree with a simpler model selector like AIC in simple cases (like linear regression)?**
   - Yes. $R^2$ of Ridge Regression is 0.92 and mean $R^2$ of our cross-validation is 0.79 and bootstrapping model is 0.81.
