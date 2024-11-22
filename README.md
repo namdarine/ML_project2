@@ -242,6 +242,23 @@ The project uses data visualization extensively to interpret results and validat
    • Example: Points align closely to the diagonal "Perfect Fit" line, demonstrating good model predictions.
 
 
+### Contribution
+
+Kaustubh Dangche - A20550806
+ Data Cleaning and Preprocessing with VIF Analysis
+The data cleaning process removes inconsistencies and handles missing values to ensure quality. The Variance Inflation Factor (VIF) is calculated to identify and remove highly collinear features, improving model stability and interpretability. This step ensures the selected features are relevant for predicting airplane prices.
+________________________________________
+Hyunsung Ha - A20557555
+2. Feature Scaling, Train-Test Split, and Regression Models
+Feature scaling standardizes input variables, ensuring uniform contribution to the model. The dataset is split into training and testing sets to evaluate performance on unseen data. Ridge and Lasso regression models are compared, with Ridge emphasizing multicollinearity handling and Lasso favoring sparse feature selection.
+________________________________________
+Anu Singh - A20568373
+3. K-Fold Cross-Validation and Bootstrapping
+K-fold cross-validation evaluates model performance across multiple data splits, ensuring robustness and reliability. Bootstrapping validates the model's stability by testing it on resampled datasets, providing additional confidence in its generalizability.
+________________________________________
+Nam Gyu Lee - A20487452
+4. Visualization and the Plane Price Predictor
+Data visualization, including correlation matrices, residual plots, and predicted vs. actual price comparisons, highlights relationships and model accuracy. The interactive airplane price predictor allows users to input specifications and get real-time predictions, demonstrating the model's practical application in aviation pricing.
 
 
 
